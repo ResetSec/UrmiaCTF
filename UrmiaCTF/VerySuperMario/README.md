@@ -7,9 +7,9 @@ by h04x and daVinci
 
 [APK For download](https://ctfd.uctf.ir/files/fd77af683a2df14b78990c08cc3c1ccb/VerySuperMario.apk?token=eyJ1c2VyX2lkIjoxODMsInRlYW1faWQiOjEwOSwiZmlsZV9pZCI6MTR9.ZPOgNA.WigI38E5GMSZpyuek3IullygdAo)
 
-### First Challenge
+## First Challenge
 
-#### "Reversing" the APK. 
+### "Reversing" the APK. 
 
 We were performing this challenge on a Kali box, so our preferred way of reversing the APK was to download the APK to the box and use apktool. 
 
@@ -24,7 +24,7 @@ The output of this is a file structure.
 
 Based on the file structure, this is obviously a full game of Mario, not something written for this challenge; this led us to look into the game more holistically instead of just guessing. 
 
-#### The DIFF report
+### The DIFF report
 
 The team's first instinct was to pull a DIFF report on the APK given to us by the challenge and the original SuperMario Android APK that can be found [here](https://github.com/maheshkurmi/-Android-Super-Mario). To reveal all the juicy secrets
 
@@ -56,7 +56,7 @@ The "NNNNNN NNNNNN=NNNNNNNNNNN" was the "Bowser Pit" as promised by the challeng
 
 Let's go see what it is. 
 
-### Running in Android Studio and peeking at the logs. 
+## Running in Android Studio and peeking at the logs. 
 
 The first step was to open the APK in Android Studio using the "Profile or Debug" feature. This would allow us to run the APK in debug mode.
 
@@ -68,7 +68,7 @@ Once you have the emulator running, you can utilize the built-in logcat feature 
 
 ![Logcat](images/image-10.png)
 
-### Getting the flag
+## Getting the flag
 
 When we played World 1, we ran over to the promised Bowser Pit and were greeted by many browsers and.... just a question mark block... Well, it's still the only unique block on the map, so let's dive in head first. Literally, let's go break the box. 
 
