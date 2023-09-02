@@ -38,19 +38,19 @@ To run the diff, we simply unpacked both apps via apktool and ran a diff using d
 
 Performing that DIFF revealed a difference in assets/maps/world1/map1/map3.txt to the map3.txt in the original APK.
 
-![Alt text](images/image-4.png)
+![Image of the Diff report](images/image-4.png)
 
 This was the beginning of the end. 
 
-![Alt text](images/image-5.png)
+![Discord Schenanigans](images/image-5.png)
 
 We compared the two binary files, which wouldn't open in a readable format anywhere other than in VSCode. VSCode still yells at you for trying to open a binary.... and the output isn't very pretty. 
 
-![Alt text](images/image-8.png)
+![The VERY READABLE MAP Binary](images/image-8.png)
 
 But, as you may notice. This is an "ascii" representation of the level. Scrolling over to the right, we see something that doesn't exist in the original. 
 
-![Alt text](images/image-9.png)
+![More Discord Schenanigans](images/image-9.png)
 
 The "NNNNNN NNNNNN=NNNNNNNNNNN" was the "Bowser Pit" as promised by the challenge text. That WILEY = was the only unique character in the whole map. That must be it. 
 
@@ -60,13 +60,13 @@ Let's go see what it is.
 
 The first step was to open the APK in Android Studio using the "Profile or Debug" feature. This would allow us to run the APK in debug mode.
 
-![Alt text](images/image-3.png)
+![Android Studio Debug](images/image-3.png)
 
 Once opened in Android Studio, I want to play the game. If you have never used Android Studio to run an Android emulator to test, debug, or develop an Android app, you might have to set up an emulated device first. Please use the [Android Studio docs](https://developer.android.com/studio/run/emulator) for this. You can also [use your Android phone](https://developer.android.com/studio/run/device) if you wish. 
 
 Once you have the emulator running, you can utilize the built-in logcat feature of Android Studio. It's an immensely powerful debug console that will capture all the device logs while running the emulator (or app on your phone.)
 
-![Alt text](images/image-10.png)
+![Logcat](images/image-10.png)
 
 ### Getting the flag
 
@@ -74,7 +74,7 @@ When we played World 1, we ran over to the promised Bowser Pit and were greeted 
 
 Lo-and-behold: 
 
-![Alt text](images/image-11.png)
+![The FLALALAG](images/image-11.png)
 
 The FLAG!! It's sitting right there on the console (ignore all the death, please...).
 
