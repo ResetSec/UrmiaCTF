@@ -1,3 +1,4 @@
-# Reset-Writeups
+# Urmia CTF 2023 Writeups
 
-- [Urmia CTF Writeups](UrmiaCTF)
+- [Reverse](Reverse)
+  - [VerySuperMario](Reverse/VerySuperMario)
