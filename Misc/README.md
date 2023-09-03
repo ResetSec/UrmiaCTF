@@ -1,4 +1,4 @@
 # Misc Category
 
 ### Index 
--[Unlock](Unlock)
+- [Unlock](Unlock)
