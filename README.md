@@ -4,3 +4,7 @@
 
 - [Reverse](Reverse)
   - [VerySuperMario](Reverse/VerySuperMario)
+- [Web](Web)
+  - [htaccess](Web/htaccess/)
+- [Misc](Misc)
+  - [Unlock](Misc/Unlock/)
