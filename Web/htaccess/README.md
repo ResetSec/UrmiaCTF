@@ -4,7 +4,7 @@ by Xaxa
 
 ## The Challenge
 
-![Alt text](images\image.png)
+![Alt text](images/image.png)
 
 ## part1: RewriteEngine On
 RewriteCond %{HTTP_HOST} !^localhost$
