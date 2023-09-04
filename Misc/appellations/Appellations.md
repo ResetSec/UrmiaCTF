@@ -1,12 +1,14 @@
 # Urima CTF | Misc | Appellations 
 
+by h04x
+
 ### Challenge Description 
 
 ![](./description.png)
 
 Downloadable files: 
-![Message.wav](./Message.wav)
-![Information.mp3](./Information.mp3)
+[Message.wav](./Message.wav)
+[Information.mp3](./Information.mp3)
 
 #### Analyzing the Files
 
@@ -15,7 +17,7 @@ Listening to the Information.mp3 sounds like it was reversed.
 
 #### Reversing the Information.mp3 
 
-Using an online tool i reversed the mp3 and got ![this](./Information-reversed.mp3)
+Using an online tool i reversed the mp3 and got [this](./Information-reversed.mp3)
 
 ```Enjoying the Party? In this Challenge you should uncover a covered message encoded within an audio recording set at 20 WPM and 600 hertz frequenzy```
 
