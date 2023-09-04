@@ -4,6 +4,22 @@
 
 ![Alt text](images/image.png)
 
+## The Video
+
+The video provided by the challenge was the following:
+
+![The Video](video/farewell.gif)
+
+### Notice the wierd pattern in the bottom corner? 
+
+So, I did what an sane person would do, and I opened it in MPV and moved through the video frame-by-frame and collected all the patterns in the form of a 4-by-4 grid. 
+
+I wanted to be able to collect the pattern in a controlled and easy to compare way. So I wrote a [p5.js](https://p5js.org/) script very, very quickly in the [online editor](https://editor.p5js.org/). 
+
+<sup>Wanna learn more about p5.js.. check out this amazing youtube channel [The Coding Train!](https://www.youtube.com/@TheCodingTrain/playlists)<sup>
+
+Anyway, here's the script and patterns.
+
 ## The Patterns
 
 ### Script to generate patterns
@@ -80,6 +96,8 @@ function downloadScreenshot() {
 
 ```
 
+### The patterns in order
+
 ![Alt text](patterns/screenshot.png)
 
 ![Alt text](patterns/screenshot(1).png)
@@ -97,3 +115,25 @@ function downloadScreenshot() {
 ![Alt text](patterns/screenshot(7).png)
 
 ![Alt text](patterns/screenshot(8).png)
+
+![Alt text](patterns/screenshot(9).png)
+
+## What's the encoding?
+
+The team was throwing out ideas for a bit, and at some point one of the team members suggested that the encoding is probably just simply a bit representation of the grid. 
+
+And I quote: "Yeh i feels like the flag maybe a sequence of number 9 numbers as you pointed out . Fibo has noting to do with char"
+
+That caused me to reevaluate my life and just say the following:
+
+![Alt text](images/image-1.png)
+
+Well, that was it.. top left -> bottom right 1 for black and 0 for white. 
+
+Here's the [CyberChef](https://gchq.github.io/CyberChef/) breakdown of the solution. 
+
+![Alt text](images/image(1).png)
+
+## The Flag
+
+`UCTF{G00dby3_fr13nd}`
