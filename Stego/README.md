@@ -3,4 +3,4 @@
 > Stego means Stegonography!  Find the flag secretly hidden in a file
 
 ### Index
-- [Dorna](./Dorna)
+- [Dorna](./Dorna) - Find the flag hidden in a picture.
