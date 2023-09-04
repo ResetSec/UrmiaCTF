@@ -9,6 +9,7 @@ by Oblivion
 ## The Solution
 
 reading from the source code we see the vulnerable function __encrypt:
+
 ```python
 def __encrypt(self, message: bytes) -> bytes:
         random.seed(int(time.time()) * len(message))
@@ -19,7 +20,8 @@ def __encrypt(self, message: bytes) -> bytes:
 
         return base64.b64encode((nonce + ciphertext)) + b'\n'
 ```
-If you search for `AES CTR exploit` you'll end finding this poc (https://gist.github.com/allanup/821bcf5a0a8841100893261c8042d8a0) which we will use to get the flag.
+
+If you search for `AES CTR exploit` you'll end finding this poc (<https://gist.github.com/allanup/821bcf5a0a8841100893261c8042d8a0>) which we will use to get the flag.
 
 The plan is simple: we have to generate an encrypted cypher text with same nonce as the encrypted flag and then use it to retrieve the flag.
 
@@ -30,6 +32,7 @@ I've tried different inputs, in my case i used `aaaaaaaaaaaaaaaaaaaaaaaaaaaa` (2
 Then you have to spam that string as fast as you can to win the race condition, in my case the encrypted flag i got was `XnVUirwi+rsH6mrmwSURusTiGrrIKcDg8pNlzP3wgFqleq1W` while my encrypted flag was `XnVUirwi+rsT6H/h2yBBv/r6S672ItS0pK1m36+limTwKPlK`, as you can see the first characters are the same, so we know that the prepended 8 byte nonce is the same.
 
 So i modified the exploit a little bit to make it work in our case:
+
 ```python
 def main():
     """

@@ -1,4 +1,4 @@
-# The Cyrpto Category
+# The Crypto Category
 
 > crypto means cryptography!  Get an encrypted flag and figure out how to decrypt it (includes both classical and modern ciphers)
 
