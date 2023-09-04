@@ -12,6 +12,7 @@
   - [htaccess](Web/htaccess/)
 - [Misc](Misc)
   - [Unlock](Misc/Unlock/)
+  - [Farewell](Misc/Farewell/)
 - [Crypto](Crypto)
   - [Breaking AES](Crypto/Breaking%20AES/)
 - [Pwn](Pwn)
