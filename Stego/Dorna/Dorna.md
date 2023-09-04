@@ -17,7 +17,7 @@ Since this is a Steganography Chall and we have a password given from the descri
 ![](./steghide.png)
 
 Running ```steghide extract -sf dorna.jpg``` reveals that there is a file hidden inside the image!
-I enter the passphrase give in the chall description and get [this](./dor4.txt) hidden file
+I enter the passphrase give in the chall description and get [this](./dorn4.txt) hidden file
 
 #### Getting the Flag 
 
