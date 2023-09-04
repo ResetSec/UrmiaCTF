@@ -1,4 +1,6 @@
-# Farewell
+# Farewell 
+
+by daVinci
 
 ## The Challenge
 
