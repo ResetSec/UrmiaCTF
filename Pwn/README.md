@@ -4,4 +4,6 @@
 
 ### Index
 
-- [moedo](moedo)
+moedo : [[Pwn/moedo/README|README]]
+Status Page : [[Pwn/Status Page/README|README]] 
+
