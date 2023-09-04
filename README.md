@@ -13,7 +13,7 @@
 - [Misc](Misc)
   - [Unlock](Misc/Unlock/)
   - [Farewell](Misc/Farewell/)
-  - [appellations]{Misc/appellations/}
+  - [appellations](Misc/appellations/)
   - [insider's-secret](/UrmiaCTF/Misc/insider's-secret/)
 - [Crypto](Crypto)
   - [Breaking AES](Crypto/Breaking%20AES/)
