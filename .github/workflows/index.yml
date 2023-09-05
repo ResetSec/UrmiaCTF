@@ -1,0 +1,17 @@
+name: Run Indexer
+
+on:
+    push:
+        branches: [ davinci ]
+
+jobs:
+    build: 
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - uses: actions/setup-python@v4
+              with:
+                  python-version: '3.x'
+
+            - name: Run .automation/index.py
+              run: python .automation/index.py

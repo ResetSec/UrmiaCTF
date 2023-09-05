@@ -1,24 +1,25 @@
-# Urmia CTF 2023 Writeups
+# Urmia CTF 2023
 
-> A student-led cybersecurity competition organized by Urmia University and Urmia University of Technology. Our goal is to provide an engaging and challenging platform for students to test their skills and knowledge in cybersecurity.
+https://ctftime.org/event/2067/
 
-[https://ctfd.uctf.ir/](https://ctfd.uctf.ir/)
+## Event Description
 
-### Index
+Urmia CTF (UCTF) is a student-led cybersecurity competition organized by Urmia University and Urmia University of Technology.
+This CTF is geared more towards university students, but anyone may compete!## Directory Structure
 
-- [Reverse](Reverse)
-  - [VerySuperMario](Reverse/VerySuperMario)
-- [Web](Web)
-  - [htaccess](Web/htaccess/)
-- [Misc](Misc)
-  - [Unlock](Misc/Unlock/)
-  - [Farewell](Misc/Farewell/)
-  - [appellations](Misc/appellations/)
-  - [insider's-secret](/UrmiaCTF/Misc/insider's-secret/)
-- [Crypto](Crypto)
-  - [Breaking AES](Crypto/Breaking%20AES/)
-- [Pwn](Pwn)
-  - [moedo](Pwn/moedo/)
-  - [Status Page](<Pwn/Status Page>)
-- [Stego](/UrmiaCTF/Stego/)
-  - [Dorna](/UrmiaCTF/Stego/Dorna/)
+## [Crypto](</home/coder/uctf/UrmiaCTF/Crypto>)
+ * #### [Breaking AES](</home/coder/uctf/UrmiaCTF/Crypto/Breaking AES>)
+## [Misc](</home/coder/uctf/UrmiaCTF/Misc>)
+ * #### [Farewell](</home/coder/uctf/UrmiaCTF/Misc/Farewell>)
+ * #### [Unlock](</home/coder/uctf/UrmiaCTF/Misc/Unlock>)
+ * #### [appellations](</home/coder/uctf/UrmiaCTF/Misc/appellations>)
+ * #### [insider's-secret](</home/coder/uctf/UrmiaCTF/Misc/insider's-secret>)
+## [Pwn](</home/coder/uctf/UrmiaCTF/Pwn>)
+ * #### [Status Page](</home/coder/uctf/UrmiaCTF/Pwn/Status Page>)
+ * #### [moedo](</home/coder/uctf/UrmiaCTF/Pwn/moedo>)
+## [Reverse](</home/coder/uctf/UrmiaCTF/Reverse>)
+ * #### [VerySuperMario](</home/coder/uctf/UrmiaCTF/Reverse/VerySuperMario>)
+## [Stego](</home/coder/uctf/UrmiaCTF/Stego>)
+ * #### [Dorna](</home/coder/uctf/UrmiaCTF/Stego/Dorna>)
+## [Web](</home/coder/uctf/UrmiaCTF/Web>)
+ * #### [htaccess](</home/coder/uctf/UrmiaCTF/Web/htaccess>)
