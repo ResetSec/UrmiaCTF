@@ -1,24 +1,25 @@
-# Urmia CTF 2023 Writeups
+# Urmia CTF 2023
 
-> A student-led cybersecurity competition organized by Urmia University and Urmia University of Technology. Our goal is to provide an engaging and challenging platform for students to test their skills and knowledge in cybersecurity.
+https://ctftime.org/event/2067/
 
-[https://ctfd.uctf.ir/](https://ctfd.uctf.ir/)
+## Event Description
 
-### Index
+Urmia CTF (UCTF) is a student-led cybersecurity competition organized by Urmia University and Urmia University of Technology.
+This CTF is geared more towards university students, but anyone may compete!## Directory Structure
 
-- [Reverse](Reverse)
-  - [VerySuperMario](Reverse/VerySuperMario)
-- [Web](Web)
-  - [htaccess](Web/htaccess/)
-- [Misc](Misc)
-  - [Unlock](Misc/Unlock/)
-  - [Farewell](Misc/Farewell/)
-  - [appellations](Misc/appellations/)
-  - [insider's-secret](/UrmiaCTF/Misc/insider's-secret/)
-- [Crypto](Crypto)
-  - [Breaking AES](Crypto/Breaking%20AES/)
-- [Pwn](Pwn)
-  - [moedo](Pwn/moedo/)
-  - [Status Page](<Pwn/Status Page>)
-- [Stego](/UrmiaCTF/Stego/)
-  - [Dorna](/UrmiaCTF/Stego/Dorna/)
+## [Crypto](</home/runner/work/UrmiaCTF/UrmiaCTF/Crypto>)
+ * #### [Breaking AES](</home/runner/work/UrmiaCTF/UrmiaCTF/Crypto/Breaking AES>)
+## [Misc](</home/runner/work/UrmiaCTF/UrmiaCTF/Misc>)
+ * #### [Farewell](</home/runner/work/UrmiaCTF/UrmiaCTF/Misc/Farewell>)
+ * #### [Unlock](</home/runner/work/UrmiaCTF/UrmiaCTF/Misc/Unlock>)
+ * #### [appellations](</home/runner/work/UrmiaCTF/UrmiaCTF/Misc/appellations>)
+ * #### [insider's-secret](</home/runner/work/UrmiaCTF/UrmiaCTF/Misc/insider's-secret>)
+## [Pwn](</home/runner/work/UrmiaCTF/UrmiaCTF/Pwn>)
+ * #### [Status Page](</home/runner/work/UrmiaCTF/UrmiaCTF/Pwn/Status Page>)
+ * #### [moedo](</home/runner/work/UrmiaCTF/UrmiaCTF/Pwn/moedo>)
+## [Reverse](</home/runner/work/UrmiaCTF/UrmiaCTF/Reverse>)
+ * #### [VerySuperMario](</home/runner/work/UrmiaCTF/UrmiaCTF/Reverse/VerySuperMario>)
+## [Stego](</home/runner/work/UrmiaCTF/UrmiaCTF/Stego>)
+ * #### [Dorna](</home/runner/work/UrmiaCTF/UrmiaCTF/Stego/Dorna>)
+## [Web](</home/runner/work/UrmiaCTF/UrmiaCTF/Web>)
+ * #### [htaccess](</home/runner/work/UrmiaCTF/UrmiaCTF/Web/htaccess>)
