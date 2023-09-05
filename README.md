@@ -19,5 +19,6 @@
   - [Breaking AES](Crypto/Breaking%20AES/)
 - [Pwn](Pwn)
   - [moedo](Pwn/moedo/)
+  - [Status Page](<Pwn/Status Page>)
 - [Stego](/UrmiaCTF/Stego/)
   - [Dorna](/UrmiaCTF/Stego/Dorna/)
