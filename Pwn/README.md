@@ -4,6 +4,6 @@
 
 ### Index
 
-moedo : [[Pwn/moedo/README|README]]
-Status Page : [[Pwn/Status Page/README|README]] 
+- [modeo](./moedo/)
+- [Status Page](<./Status Page>) 
 
