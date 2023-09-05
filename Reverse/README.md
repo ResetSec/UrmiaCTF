@@ -1,7 +1,9 @@
-# The Reverse Engineering Category
+# Reverse
 
-> The process of analyzing a subject system to identify the system's components and their interrelationships and to create representations of the system in another form or at a higher level of abstraction.
+### Category Description
 
-### Index
+Unravel the mysteries of software's hidden secrets! Break through the digital enigma, dissect malware, and decipher the arcane languages of binaries.
 
-- [VerySuperMario](VerySuperMario) - A simple Android APK reversing challenge featuring Android Studio, Logcat, and diff reports
+## Challenges
+
+- ### [VerySuperMario](<VerySuperMario>)

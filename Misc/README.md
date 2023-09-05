@@ -1,7 +1,12 @@
-# Misc Category
+# Misc
 
-### Index 
-- [Unlock](Unlock)
-- [Farewell](Farewell) - A weird challenge about decoding a 4x4 grid.
-- [Appellations](appellations) - A challenge about deconding an easy morse code.
-- [Insider's Secret](insider's-secret) - Base64 encoded. Really often.
+### Category Description
+
+For the jack of all trades! These challenges test your versatility, spanning a myriad of skills and knowledge. Embrace the unknown.
+
+## Challenges
+
+- ### [Farewell](<Farewell>)
+- ### [Unlock](<Unlock>)
+- ### [appellations](<appellations>)
+- ### [insider's-secret](<insider's-secret>)

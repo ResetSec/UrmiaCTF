@@ -1,5 +1,6 @@
 import os
 import glob
+import json
 import httpx
 
 TOP_LEVEL_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -22,6 +23,10 @@ r = httpx.get(api_url)
 event_description = r.json()['description']
 event_name = r.json()['title']
 
+# Open the descriptions file and read the descriptions into a list
+with open(os.path.join(AUTOMATION_DIR, 'descriptions.json'), 'r') as f:
+    descriptions = json.load(f)
+
 # generate the README.md file. 
 # generate an unordered list of the directories and subdirectories in the repository. 
 # should be in the format of:
@@ -34,13 +39,23 @@ with open(os.path.join(TOP_LEVEL_DIR, 'README.md'), 'w') as f:
     f.write('# ' + event_name + '\n\n')
     f.write(event_url + '\n\n')
     f.write('## Event Description\n\n')
-    f.write(event_description)
-    f.write('## Directory Structure\n\n')
+    f.write(event_description + '\n\n')
     for directory in DIRECTORY_LIST:
-        f.write('## [{}](<{}>)\n'.format(os.path.basename(directory), directory))
+        f.write('## [{}](<{}>)\n'.format(os.path.basename(directory), os.path.basename(directory)))
         for subdirectory in SUB_DIRECTORY_LIST:
             if os.path.dirname(subdirectory) == directory:
-                f.write(' * #### [{}](<{}>)\n'.format(os.path.basename(subdirectory), subdirectory))
+                f.write(' * #### [{}](<{}/{}/>)\n'.format(os.path.basename(subdirectory), os.path.basename(directory), os.path.basename(subdirectory) ))
 
-
-
+# do the same thing for the README in each directory
+for directory in DIRECTORY_LIST:
+    with open(os.path.join(directory, 'README.md'), 'w') as f:
+        f.write('# ' + os.path.basename(directory) + '\n\n')
+        # From the descriptions var, check if the directory name is contained in the category and if so, write the description to the README
+        f.write('### Category Description\n\n')
+        for category in descriptions['categories']:
+            if os.path.basename(directory) in category['name']:
+                f.write(category['details']['description'] + '\n\n')
+        f.write('## Challenges\n\n')
+        for subdirectory in SUB_DIRECTORY_LIST:
+            if os.path.dirname(subdirectory) == directory:
+                f.write('- ### [{}](<{}>)\n'.format(os.path.basename(subdirectory), os.path.basename(subdirectory)))

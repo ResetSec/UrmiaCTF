@@ -1,0 +1,105 @@
+{
+    "categories": [
+      {
+        "name": "Web Security",
+        "details": {
+          "description": "Every website has different programming languages and those programming languages have specific vulnerabilities. There are issues fundamental to the internet that can show up regardless of the chosen language or framework. These vulnerabilities often show up in CTFs as web security challenges where the user needs to exploit a bug to gain some kind of higher-level privilege.",
+          "resources": [
+            "OWASP Top Ten Project: https://owasp.org/www-project-top-ten/",
+            "PortSwigger Web Security Academy: https://portswigger.net/web-security"
+          ]
+        }
+      },
+      {
+        "name": "Binary Exploitation (Pwn)",
+        "details": {
+          "description": "Binaries, or executables, are machine code for a computer to execute. For the most part, the binaries that you will face in CTFs are Linux ELF files or the occasional windows executable. Binary Exploitation is a broad topic within Cyber Security which really comes down to finding a vulnerability in the program and exploiting it to gain control of a shell or modifying the program's functions.",
+          "resources": [
+            "Binary Exploitation - LiveOverflow's YouTube Series: https://www.youtube.com/playlist?list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN",
+            "pwnable.tw - A Wargame for Binary Exploitation: https://pwnable.tw/"
+          ]
+        }
+      },
+      {
+        "name": "Crypto",
+        "details": {
+          "description": "The word “cryptography” technically means the art of writing codes. When it comes to digital forensics, it’s a method you can use to understand how data is constructed for your analysis. Cryptography is used for securing web traffic (passwords, communication, etc.) and securing copyrighted software code. It can be used maliciously by hiding malicious communication or hiding malicious code.",
+          "resources": [
+            "Crypto101 - A free introductory book on cryptography: https://crypto101.io/",
+            "Cryptopals Cryptography Challenges: https://cryptopals.com/"
+          ]
+        }
+      },
+      {
+        "name": "Forensics",
+        "details": {
+          "description": "Become the cyber-sleuth you were always meant to be! Analyze digital crime scenes, hunt for hidden treasures in log files, and solve the unsolvable mysteries of the digital realm.",
+          "resources": [
+            "Digital Forensics Framework (DFF): https://github.com/digital-forensics/dff",
+            "Autopsy - The Sleuth Kit: https://www.sleuthkit.org/autopsy/"
+          ]
+        }
+      },
+      {
+        "name": "Steganography",
+        "details": {
+          "description": "Discover the art of digital camouflage! Unmask the hidden messages, secret images, and covert files concealed within innocent-looking pictures and documents.",
+          "resources": [
+            "Steghide - A steganography program: https://github.com/StefanoDeVuono/steghide",
+            "Steganography Challenges on Hacker101: https://ctf.hacker101.com/ctf"
+          ]
+        }
+      },
+      {
+        "name": "Networking",
+        "details": {
+          "description": "Navigate the intricate web of network protocols! Sniff out vulnerabilities, exploit services, and become the master of network ninja techniques.",
+          "resources": [
+            "Wireshark - The world's foremost network protocol analyzer: https://www.wireshark.org/",
+            "RouterSploit - Exploitation Framework for Embedded Devices: https://github.com/reverse-shell/routersploit"
+          ]
+        }
+      },
+      {
+        "name": "Reverse",
+        "details": {
+          "description": "Unravel the mysteries of software's hidden secrets! Break through the digital enigma, dissect malware, and decipher the arcane languages of binaries.",
+          "resources": [
+            "Radare2 - The open-source, cross-platform reverse engineering framework: https://rada.re/r/",
+            "Crackmes.one - A collection of reverse engineering challenges: https://crackmes.one/"
+          ]
+        }
+      },
+      {
+        "name": "Mobile Security",
+        "details": {
+          "description": "Defend the realm of pocket-sized devices! Analyze the secrets of Android and iOS apps, and embark on epic quests to conquer mobile vulnerabilities.",
+          "resources": [
+            "Android Hacking Resources: https://github.com/ashishb/android-security-awesome",
+            "iOS Application Security Guide: https://github.com/ivRodriguezCA/awesome-ios-security"
+          ]
+        }
+      },
+      {
+        "name": "Hardware Hacking",
+        "details": {
+          "description": "Uncover the dark secrets of silicon and circuits! Examine the innards of hardware, exploit embedded systems, and rule over the kingdom of IoT devices.",
+          "resources": [
+            "Hackaday - A platform for hardware hackers: https://hackaday.com/",
+            "PlatformIO - An open-source ecosystem for IoT development: https://platformio.org/"
+          ]
+        }
+      },
+      {
+        "name": "Miscellaneous",
+        "details": {
+          "description": "For the jack of all trades! These challenges test your versatility, spanning a myriad of skills and knowledge. Embrace the unknown.",
+          "resources": [
+            "CTFTime - Keep track of upcoming CTFs and events: https://ctftime.org/",
+            "VulnHub - A platform for practicing penetration testing: https://www.vulnhub.com/"
+          ]
+        }
+      }
+    ]
+  }
+  

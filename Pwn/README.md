@@ -1,9 +1,10 @@
-# The Pwn Category
+# Pwn
 
-> Get a binary and a link to a program running on a remote server.  Cause a buffer overflow, etc. to bypass normal functionality and get the program to read the flag to you.
+### Category Description
 
-### Index
+Binaries, or executables, are machine code for a computer to execute. For the most part, the binaries that you will face in CTFs are Linux ELF files or the occasional windows executable. Binary Exploitation is a broad topic within Cyber Security which really comes down to finding a vulnerability in the program and exploiting it to gain control of a shell or modifying the program's functions.
 
-- [modeo](./moedo/)
-- [Status Page](<./Status Page>) 
+## Challenges
 
+- ### [Status Page](<Status Page>)
+- ### [moedo](<moedo>)
