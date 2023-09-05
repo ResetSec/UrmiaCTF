@@ -57,7 +57,7 @@ frameEl.contentWindow.location.reload();
 
 we can see that https://stt.uctf.ir/cgi-bin/uptime.sh is being included in the main page with a iframe.
 
-now the first thing that came to mi mind is try shellshock as it is probably the most popular exploit for folder cgi-bin
+now the first thing that came to my mind is try shellshock as it is probably the most popular exploit for folder cgi-bin
 
 here's an in depth explanation of the exploit
 https://securityintelligence.com/articles/shellshock-vulnerability-in-depth/
