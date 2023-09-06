@@ -9,6 +9,7 @@ This CTF is geared more towards university students, but anyone may compete!
 
 ## [Crypto](<Crypto>)
  * #### [Breaking AES](<Crypto/Breaking AES/>)
+ * #### [Noql](<Crypto/Noql/>)
 ## [Misc](<Misc>)
  * #### [Farewell](<Misc/Farewell/>)
  * #### [Unlock](<Misc/Unlock/>)
