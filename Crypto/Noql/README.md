@@ -37,9 +37,9 @@ To obtain our flag, we must, of course, decrypt it, but how?
 
 From just looking at the surface, there are some potential clues that we can observe from the token:
 1. The token starts with a prefix that doesn't seem very random: ``gAAAAA``.
-2. The token seems to be base64-encoded, and/or only contains URL-safe characters.
+2. The token seems to be base64-encoded, it only contains URL-safe characters.
 
-We've also been provided a key that seems to be base64-encoded.
+We've also been provided a key that seems to be [base64-encoded](https://www.microfocus.com/documentation/enterprise-developer/ed60/ES-WIN/BKCJCJDEFNS009.html).
 
 ### 1. Taking a Closer Look
 
@@ -47,11 +47,11 @@ We've also been provided a key that seems to be base64-encoded.
 - The length is always a multiple of 4.
   - The ***total length*** of the string, including the optional padded ``=`` symbols must be divisible by 4 without leaving a remainder. 
 
-- Only characters from the following regex are used: ``^(?:[A-Za-z0-9\+\-]{4,}+[=+$?]{0,2})``.
-  - All of the characters used in the key consist of only alphanumeric characters, ``+``, ``-``, and/or ``=``.
+- Only characters from the following regex are used: ``/^[A-Za-z0-9\+/]+[=+$?]{0,2}/``, where 
+  - All of the characters used in the key consist of only alphanumeric characters, ``+``, ``/``, and it may contain 0-2 ``=``.
 
-- The ***end*** of the string may be padded up to two times with ``=``.
-  - The string may contain no ``=`` at all, but the total number of ``=`` must not be more than 2.
+- The ***end*** of the string may be padded up to two times with ``=``, but no more than that.
+  - The string may contain no ``=`` at all, but the total number of ``=`` must not be greater than 2.
 
 It certainly seems to check out. ***HOWEVER***, it does not always mean that it will definitely be a base64-encoded string.
 
@@ -73,17 +73,18 @@ We're met with [a different CTF write-up](https://medium.com/@weareintentions/no
 
 ## A Cryptographic Breakthrough
 
-On this article we've stumbled upon, there is another token there that we are able to compare our token with. Upon comparing the two tokens, we can see that ``gAAAAAB`` seems to consistent across both tokens.
+On this article we've stumbled upon, there is another token there that we are able to compare our token with. Upon comparing the two tokens, we can see that the ``gAAAAAB`` prefix seems to consistent across both tokens.
 
 The article also mentions an encryption algorithm that is referred to as "Fernet". *Naturally*, that brings us to an important question, 'WHAT the heck is a "Fernet"?'
 
-Simply put:
+Put simply:
 1. It's a symmetric encryption algorithm that is also URL-safe, which makes it very convenient for web applications to handle these encrypted tokens.
 2. "Symmetric" in this case means that the algorithm uses the same key for both encryption and decryption processes.
-3. The generated key consists of a base64-encoded string, and it is encoded in a way that it is also url-safe (i.e. *base64url*).
-4. Anyone that gets ahold of the key is able to decrypt the message that has been encrypted using that same key.
+3. The generated key consists of a base64-encoded string, and it is encoded in a way that it is also url-safe (i.e. *base64url*).\*
+   - \**Note: URL-safe base64 encoding will replace any forward slashes (``/``) with hyphens instead (``-``)*
+5. Anyone that gets ahold of the key is able to decrypt the message that has been encrypted using that same key.
 
-Looking back at the token we were provided in ![noql.txt](files/noql.txt), we can confirm that this is what we're looking for.
+Looking back at the token we were provided in ![noql.txt](files/noql.txt) and the key together, we can confirm that this is what we're looking for.
 
 ## Capturing the Flag
 
@@ -103,12 +104,12 @@ This shows us the following information after it has been fully decrypted:
 - Metadata
   - The timestamp at the time and date of encryption
   - The 'current' timestamp at the time and date of decryption
-  - 
- ---
+
+---
 # Additional Resources
 
-If you wish to read more about the technical details, I highly recommend taking a look at [the Fernet Spec(ification) document](https://github.com/fernet/spec/blob/master/Spec.md)\* which explains more about how the algorithm works.
+If you are interested in the technical details, I highly recommend taking a look at [the Fernet Spec(ification) document](https://github.com/fernet/spec/blob/master/Spec.md)\*\* which explains more about how the algorithm works.
 
 [Here is a Medium article](https://medium.com/asecuritysite-when-bob-met-alice/passing-encrypted-tokens-the-fernet-way-ef9b2a9d125d) from [the person](https://www.youtube.com/billbuchanan) behind the website ``https://asecuritysite.com`` that was used for decrypting the Fernet token.
 
-\**Note: (If the above link is no longer accessible, [here is archived version](https://web.archive.org/web/20230505131522/https://github.com/fernet/spec/blob/master/Spec.md) of the Fernet Spec document instead.)*
+\*\**Note: (If the Fernet Spec link is no longer accessible, [here is an archived copy](https://web.archive.org/web/20230505131522/https://github.com/fernet/spec/blob/master/Spec.md) instead.)*
